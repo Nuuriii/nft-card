@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Outfit from '../../assets/fonts/Outfit-VariableFont_wght.ttf';
 
 export const Container = styled.div`
   height: 100vh;
@@ -6,6 +7,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @font-face {
+    font-family: Outfit;
+    src: url(${Outfit});
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -38,12 +44,14 @@ export const Information = styled.div`
 export const Title = styled.h1`
   color: #fff;
   margin: 1rem 0;
+  font-family: Outfit, sans-serif;
   font-size: 1.2rem;
 `;
 
 export const Description = styled.p`
   color: hsl(215, 51%, 70%);
   margin: 0 0 1rem 0;
+  font-family: Outfit, sans-serif;
 `;
 
 export const ExtraInformation = styled.div`
@@ -56,6 +64,7 @@ export const EthereumWrapper = styled.div`
   display: flex;
   width: 8rem;
   span {
+    font-family: Outfit, sans-serif;
     font-weight: 700;
     margin: 0 0 0 0.5rem;
     color: hsl(178, 100%, 50%);
@@ -66,6 +75,7 @@ export const TimerWrapper = styled.div`
   display: flex;
   width: 8rem;
   span {
+    font-family: Outfit, sans-serif;
     font-weight: 700;
     margin: 0 0 0 0.5rem;
     color: hsl(215, 51%, 70%);
@@ -87,6 +97,7 @@ export const Creator = styled.div`
     height: 2rem;
   }
   span {
+    font-family: Outfit, sans-serif;
     color: #fff;
   }
 `;
