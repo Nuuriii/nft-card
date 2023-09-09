@@ -64,8 +64,29 @@ export const EthereumWrapper = styled.div`
 
 export const TimerWrapper = styled.div`
   display: flex;
+  width: 8rem;
+  span {
+    font-weight: 700;
+    margin: 0 0 0 0.5rem;
+    color: hsl(215, 51%, 70%);
+  }
+`;
+
+export const Hr = styled.hr`
+  color: hsl(215, 32%, 27%);
+  margin: 0 0 1rem 0;
 `;
 
 export const Creator = styled.div`
   display: flex;
+  align-items: center;
+  img {
+    margin: 0 0.9rem 0 0;
+    outline: 1px solid #fff;
+    border-radius: 100%;
+    height: 2rem;
+  }
+  span {
+    color: #fff;
+  }
 `;

@@ -12,6 +12,7 @@ import {
   ExtraInformation,
   EthereumWrapper,
   TimerWrapper,
+  Hr,
   Creator,
 } from './NftPreview.style';
 
@@ -38,10 +39,10 @@ export const NftPreview = () => {
               <span>3 days left</span>
             </TimerWrapper>
           </ExtraInformation>
-          <hr />
+          <Hr />
           <Creator>
             <img src={AvatarIcon} alt='' />
-            <p>Creation of Jules Wyvern</p>
+            <span>Creation of Jules Wyvern</span>
           </Creator>
         </Information>
       </Wrapper>
