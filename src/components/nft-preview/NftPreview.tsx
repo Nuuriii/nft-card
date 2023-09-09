@@ -2,9 +2,13 @@ import ClockIcon from '../../assets/icon-clock.svg';
 import EthereumIcon from '../../assets/icon-ethereum.svg';
 import EquilibriumIcon from '../../assets/image-equilibrium.jpg';
 import AvatarIcon from '../../assets/image-avatar.png';
+import ViewIcon from '../../assets/icon-view.svg';
 import {
   Container,
   Wrapper,
+  HoverOverlay,
+  EquilibriumImg,
+  HoverEye,
   ImageWrapper,
   Information,
   Title,
@@ -21,10 +25,14 @@ export const NftPreview = () => {
     <Container>
       <Wrapper>
         <ImageWrapper>
-          <img src={EquilibriumIcon} alt='Equilibrium Icon' />
+          <HoverOverlay />
+          <EquilibriumImg src={EquilibriumIcon} alt='Equilibrium Icon' />
+          <HoverEye src={ViewIcon} alt='view icon' />
         </ImageWrapper>
         <Information>
-          <Title>Equilibrium #3429</Title>
+          <Title>
+            <a href='/'>Equilibrium #3429</a>
+          </Title>
           <Description>
             Our Equilibrium collection promotes balance and calm.
           </Description>
@@ -42,7 +50,9 @@ export const NftPreview = () => {
           <Hr />
           <Creator>
             <img src={AvatarIcon} alt='' />
-            <span>Creation of Jules Wyvern</span>
+            <p>
+              Creation of <a href='/'>Jules Wyvern</a>
+            </p>
           </Creator>
         </Information>
       </Wrapper>
