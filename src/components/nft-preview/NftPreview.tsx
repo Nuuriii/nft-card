@@ -1,36 +1,50 @@
-import ClockIcon from "../../assets/icon-clock.svg";
-import EthereumIcon from "../../assets/icon-ethereum.svg";
-import EquilibriumIcon from "../../assets/image-equilibrium.jpg";
-import AvatarIcon from "../../assets/image-avatar.png";
+import ClockIcon from '../../assets/icon-clock.svg';
+import EthereumIcon from '../../assets/icon-ethereum.svg';
+import EquilibriumIcon from '../../assets/image-equilibrium.jpg';
+import AvatarIcon from '../../assets/image-avatar.png';
+import {
+  Container,
+  Wrapper,
+  ImageWrapper,
+  Information,
+  Title,
+  Description,
+  ExtraInformation,
+  EthereumWrapper,
+  TimerWrapper,
+  Creator,
+} from './NftPreview.style';
 
 export const NftPreview = () => {
-   return (
-      <div>
-         <div>
-            <div>
-               <img src={EquilibriumIcon} alt='' />
-            </div>
-            <div>
-               <h1>Equilibrium #3429</h1>
-               <p>Our Equilibrium collection promotes balance and calm.</p>
-               <div>
-                  <div>
-                     <img src={EthereumIcon} alt='' />
-                     <span>0.041 ETH</span>
-                  </div>
+  return (
+    <Container>
+      <Wrapper>
+        <ImageWrapper>
+          <img src={EquilibriumIcon} alt='Equilibrium Icon' />
+        </ImageWrapper>
+        <Information>
+          <Title>Equilibrium #3429</Title>
+          <Description>
+            Our Equilibrium collection promotes balance and calm.
+          </Description>
+          <ExtraInformation>
+            <EthereumWrapper>
+              <img src={EthereumIcon} alt='' />
+              <span>0.041 ETH</span>
+            </EthereumWrapper>
 
-                  <div>
-                     <img src={ClockIcon} alt='' />
-                     <span>3 days left</span>
-                  </div>
-               </div>
-               <hr />
-               <div>
-                  <img src={AvatarIcon} alt='' />
-                  <p>Creation of Jules Wyvern</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   );
+            <TimerWrapper>
+              <img src={ClockIcon} alt='' />
+              <span>3 days left</span>
+            </TimerWrapper>
+          </ExtraInformation>
+          <hr />
+          <Creator>
+            <img src={AvatarIcon} alt='' />
+            <p>Creation of Jules Wyvern</p>
+          </Creator>
+        </Information>
+      </Wrapper>
+    </Container>
+  );
 };
