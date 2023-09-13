@@ -34,7 +34,7 @@ export const NftPreview = () => {
             <a href='/'>Equilibrium #3429</a>
           </Title>
           <Description>
-            Our Equilibrium collection promotes balance and calm.
+            Our Euilibrium collection promotes balance and calm.
           </Description>
           <ExtraInformation>
             <EthereumWrapper>
